@@ -5,8 +5,7 @@ def fibinachi(length):
     current_num = 1
     temp_num = 0
 
-    if(length) == (0):
-        return(0)
+
 
     for i in range (length):
         temp_num = current_num
