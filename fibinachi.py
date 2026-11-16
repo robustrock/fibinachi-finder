@@ -20,11 +20,16 @@ while True:
 
     if user_in == ("exit"):
         break
-    elif int(user_in) < 0:
-        print("please enter a possitive number!")
-        continue
-    else:
+
+    try:
         user_in = int(user_in)
+
+        if user_in < 0:
+            print("please enter a possitive number!")
+            continue
         print(fibinachi(user_in))
+
+    except ValueError:
+        print("Please enter a valid number!")
 
     
